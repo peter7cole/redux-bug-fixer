@@ -10,7 +10,17 @@
 
 ## Dev Info
 
-`"scripts": { "start": "webpack-dev-server --config ./webpack.config.js", "test": "jest" }, "devDependencies": { "webpack": "^5.1.0", "webpack-cli": "^4.0.0", "webpack-dev-server": "^3.11.0" }`
+```javascript
+"scripts": {
+		"start": "webpack-dev-server --config ./webpack.config.js",
+		"test": "jest"
+	},
+"devDependencies": {
+		"webpack": "^5.1.0",
+		"webpack-cli": "^4.0.0",
+		"webpack-dev-server": "^3.11.0"
+  }
+```
 
 ## Snapshot
 
