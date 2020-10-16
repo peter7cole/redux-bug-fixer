@@ -1,18 +1,28 @@
 {
-	"name": "redux-course",
+	"name": "redux-starter",
 	"version": "1.0.0",
-	"description": "Peter Cole",
+	"description": "Redux Practice",
 	"main": "index.js",
 	"scripts": {
-		"start": "webpack-dev-server --config ./webpack.config.js",
-		"test": "jest"
+		"start": "webpack-dev-server --config ./webpack.config.js"
 	},
 	"keywords": [],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/peter7cole/redux-bug-fixer.git"
+	},
 	"author": "Peter Cole",
 	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/peter7cole/redux-bug-fixer/issues"
+	},
+	"homepage": "https://github.com/peter7cole/redux-bug-fixer#readme",
 	"devDependencies": {
-		"webpack": "^5.1.0",
-		"webpack-cli": "^4.0.0",
-		"webpack-dev-server": "^3.11.0"
+		"webpack": "4.41.6",
+		"webpack-cli": "3.3.11",
+		"webpack-dev-server": "3.10.3"
+	},
+	"dependencies": {
+		"immer": "^7.0.9"
 	}
 }
