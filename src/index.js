@@ -1,5 +1,10 @@
 import store from './store';
 
+const unsubscribe = store.subscribe(() => {
+	// UI Layer
+	console.log('store changed', store.getState());
+});
+
 store.dispatch({
 	type: 'BUG_ADDED',
 	payload: {
@@ -7,7 +12,7 @@ store.dispatch({
 	},
 });
 
-console.log(store.getState());
+unsubscribe();
 
 store.dispatch({
 	type: 'BUG_REMOVED',
