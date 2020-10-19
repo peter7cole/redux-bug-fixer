@@ -5,8 +5,9 @@ let lastId = 0;
 
 // pure functions, free of side effects
 
+// declare initial state as an empty array, because when we start the app, the store is undefined, and you don't want reducer being called with undefined as its first argument
 const reducer = (state = [], action) => {
-	switch (action) {
+	switch (action.type) {
 		case actions.BUG_ADDED:
 			return [
 				...state,

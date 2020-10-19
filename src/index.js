@@ -1,15 +1,16 @@
 import store from './store';
-import { bugAdded, bugRemoved } from './actions';
+import * as actions from './actions';
 
 const unsubscribe = store.subscribe(() => {
 	// UI Layer
-	console.log('store changed', store.getState());
+	console.log('Store changed!', store.getState());
 });
-store.dispatch(bugAdded('Bug 1'));
 
-console.log(store.getState());
+store.dispatch(actions.BUG_ADDED('Bug 1'));
 
-//place unsubscribe() before removal, because store update notification not needed when you're removing something
+store.dispatch(actions.BUG_RESOLVED(1));
+
+// place unsubscribe() before removal, because store update notification not needed when you're removing something
 unsubscribe();
 
-store.dispatch(bugRemoved(1));
+store.dispatch(actions.BUG_REMOVED(1));
