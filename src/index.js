@@ -5,7 +5,6 @@ const unsubscribe = store.subscribe(() => {
 	// UI Layer
 	console.log('store changed', store.getState());
 });
-
 store.dispatch(bugAdded('Bug 1'));
 
 console.log(store.getState());
