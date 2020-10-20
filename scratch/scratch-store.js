@@ -10,6 +10,7 @@ function createStore(reducer) {
 		state = reducer(state, action);
 		// notify the subscribers
 		for (let i = 0; i < listeners.length; i++) {
+			// console.log(listeners[i]);
 			listeners[i]();
 		}
 	}
