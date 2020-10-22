@@ -19,7 +19,12 @@ const reducer = (state = [], action) => {
 			];
 		case actions.BUG_RESOLVED:
 			return state.map(bug => {
-				if (bug.id === action.payload.id) return { ...bug, resolved: true };
+				if (bug.id === action.payload.id) {
+					return { ...bug, resolved: true };
+				} else {
+					// Question: should I be returning { ...bug } instead of bug?
+					return bug;
+				}
 				// remember to return an object with all its original properties and the modified property
 			});
 		case actions.BUG_REMOVED:

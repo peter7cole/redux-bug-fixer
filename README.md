@@ -1,7 +1,7 @@
 # Redux Bug Fixer
 
 **Author** Peter Cole  
-**Version** 1.0.3
+**Version** 1.0.4
 
 ## Overview
 
@@ -23,7 +23,9 @@
 },
 "dependencies": {
 	"immer": "^7.0.9",
-	"redux": "^4.0.5"
+	"nanoid": "^3.1.13",
+	"redux": "^4.0.5",
+	"redux-devtools-extension": "^2.13.8"
 }
 ```
 
