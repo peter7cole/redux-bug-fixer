@@ -12,18 +12,19 @@
 
 ```javascript
 "scripts": {
-		"start": "webpack-dev-server --config ./webpack.config.js",
-		"test": "jest"
-	},
+	"start": "webpack-dev-server --config ./webpack.config.js",
+	"test": "jest"
+},
 "devDependencies": {
-		"webpack": "4.41.6",
-		"webpack-cli": "3.3.11",
-		"webpack-dev-server": "3.10.3"
-	},
-	"dependencies": {
-		"immer": "^7.0.9",
-		"redux": "^4.0.5"
-	}
+	"jest": "^26.6.0",
+	"webpack": "4.41.6",
+	"webpack-cli": "3.3.11",
+	"webpack-dev-server": "3.10.3"
+},
+"dependencies": {
+	"immer": "^7.0.9",
+	"redux": "^4.0.5"
+}
 ```
 
 ## Snapshot
