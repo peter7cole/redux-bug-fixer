@@ -1,5 +1,5 @@
-import store from './store';
-import * as actions from './actions';
+import store from './store/store';
+import * as actions from './store/actions';
 
 const unsubscribe = store.subscribe(() => {
 	// UI Layer
