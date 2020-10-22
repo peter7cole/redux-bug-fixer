@@ -1,7 +1,7 @@
 # Redux Bug Fixer
 
 **Author** Peter Cole  
-**Version** 1.0.3
+**Version** 1.0.4
 
 ## Overview
 
@@ -22,8 +22,11 @@
 	"webpack-dev-server": "3.10.3"
 },
 "dependencies": {
+	"@reduxjs/toolkit": "^1.4.0",
 	"immer": "^7.0.9",
-	"redux": "^4.0.5"
+	"nanoid": "^3.1.13",
+	"redux": "^4.0.5",
+	"redux-devtools-extension": "^2.13.8"
 }
 ```
 

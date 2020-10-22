@@ -1,5 +1,5 @@
-import store from './store';
-import * as actions from './actions';
+import store from './store/store';
+import * as actions from './store/actions';
 
 const unsubscribe = store.subscribe(() => {
 	// UI Layer
@@ -7,6 +7,8 @@ const unsubscribe = store.subscribe(() => {
 });
 
 store.dispatch(actions.BUG_ADDED('Bug 1'));
+store.dispatch(actions.BUG_ADDED('Bug 2'));
+store.dispatch(actions.BUG_ADDED('Bug 3'));
 
 store.dispatch(actions.BUG_RESOLVED(store.getState()[0].id));
 
