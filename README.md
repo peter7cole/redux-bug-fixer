@@ -28,9 +28,10 @@
 
 ## Snapshot
 
-- Coming soon
+![snapshot from v1.0.2](./assets/v102-snapshot.png)
 
-<!-- Step 1 - Design the Store
+<!--
+Step 1 - Design the Store
 const store = {
 	bugs: [{ id: 1, description: '', resolved: false }],
 	currentUser: { name: 'Peter' },
@@ -48,4 +49,5 @@ Step 3 - Create Reducers
    see ./reducer.js
 
 Step 4 - Set Up the Store
-   see ./store.js -->
+   see ./store.js
+-->
