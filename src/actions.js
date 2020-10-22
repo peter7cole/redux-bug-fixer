@@ -8,15 +8,15 @@ export const BUG_ADDED = description => ({
 	},
 });
 
-export const BUG_REMOVED = id => ({
-	type: actions.BUG_REMOVED,
+export const BUG_RESOLVED = id => ({
+	type: actions.BUG_RESOLVED,
 	payload: {
 		id,
 	},
 });
 
-export const BUG_RESOLVED = id => ({
-	type: actions.BUG_RESOLVED,
+export const BUG_REMOVED = id => ({
+	type: actions.BUG_REMOVED,
 	payload: {
 		id,
 	},

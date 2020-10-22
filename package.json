@@ -1,6 +1,6 @@
 {
 	"name": "redux-starter",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Redux Practice",
 	"main": "index.js",
 	"scripts": {
@@ -25,6 +25,7 @@
 	},
 	"dependencies": {
 		"immer": "^7.0.9",
+		"nanoid": "^3.1.13",
 		"redux": "^4.0.5"
 	}
 }

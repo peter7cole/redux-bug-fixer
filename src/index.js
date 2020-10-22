@@ -8,9 +8,9 @@ const unsubscribe = store.subscribe(() => {
 
 store.dispatch(actions.BUG_ADDED('Bug 1'));
 
-store.dispatch(actions.BUG_RESOLVED(1));
+store.dispatch(actions.BUG_RESOLVED(store.getState()[0].id));
 
 // place unsubscribe before removal, because store update notification not needed when you're removing something
 unsubscribe();
 
-store.dispatch(actions.BUG_REMOVED(1));
+store.dispatch(actions.BUG_REMOVED(store.getState()[0].id));
