@@ -1,7 +1,7 @@
 # Redux Bug Fixer
 
 **Author** Peter Cole  
-**Version** 1.0.2
+**Version** 1.0.3
 
 ## Overview
 
@@ -29,7 +29,7 @@
 
 ## Snapshot
 
-![snapshot from v1.0.2](./assets/v102-snapshot.png)
+![snapshot from v1.0.3](./assets/v103-snapshot.png)
 
 <!--
 Step 1 - Design the Store
