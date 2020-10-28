@@ -16,4 +16,4 @@ store.dispatch(actions.BUG_RESOLVED({ id: store.getState()[0].id }));
 // place unsubscribe before removal, because store update notification not needed when you're removing something
 unsubscribe();
 
-store.dispatch(actions.BUG_REMOVED(store.getState()[0].id));
+store.dispatch(actions.BUG_REMOVED({ id: store.getState()[0].id }));
