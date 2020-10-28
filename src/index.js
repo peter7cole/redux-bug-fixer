@@ -1,5 +1,6 @@
 import configureStore from './store/store';
 import * as actions from './store/actions';
+import slice from './store/slice';
 
 const store = configureStore();
 
@@ -17,3 +18,5 @@ store.dispatch(actions.BUG_RESOLVED({ id: store.getState()[0].id }));
 unsubscribe();
 
 store.dispatch(actions.BUG_REMOVED({ id: store.getState()[0].id }));
+
+console.log(slice.actions);
