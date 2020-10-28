@@ -1,7 +1,7 @@
 # Redux Bug Fixer
 
 **Author** Peter Cole  
-**Version** 1.0.4
+**Version** 1.0.5
 
 ## Overview
 
@@ -26,7 +26,6 @@
 	"immer": "^7.0.9",
 	"nanoid": "^3.1.13",
 	"redux": "^4.0.5",
-	"redux-devtools-extension": "^2.13.8"
 }
 ```
 
@@ -35,23 +34,6 @@
 ![snapshot from v1.0.3](./assets/v103-snapshot.png)
 
 <!--
-Step 1 - Design the Store
-const store = {
-	bugs: [{ id: 1, description: '', resolved: false }],
-	currentUser: { name: 'Peter' },
-};
-
-Step 2 - Create Actions
-const action = {
-	type: 'BUG_ADDED',
-	payload: {
-		description: '...',
-	},
-};
-
-Step 3 - Create Reducers
-   see ./reducer.js
-
-Step 4 - Set Up the Store
-   see ./store.js
+1.0.5
+	Added
 -->
