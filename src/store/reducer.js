@@ -1,4 +1,4 @@
-import * as actions from './actionTypes';
+import * as actions from './actions';
 import { nanoid } from 'nanoid';
 
 // Reducers are pure functions, free of side effects. Declare initial state as an empty array, because when we start the app, the store is undefined, and you don't want reducer being called with undefined as its first argument
@@ -7,7 +7,7 @@ import { nanoid } from 'nanoid';
 
 const reducer = (state = [], action) => {
 	switch (action.type) {
-		case actions.BUG_ADDED:
+		case actions.BUG_ADDED.type:
 			return [
 				...state,
 				{
@@ -17,7 +17,7 @@ const reducer = (state = [], action) => {
 					resolved: false,
 				},
 			];
-		case actions.BUG_RESOLVED:
+		case actions.BUG_RESOLVED.type:
 			return state.map(bug => {
 				if (bug.id === action.payload.id) {
 					return { ...bug, resolved: true };
@@ -27,7 +27,7 @@ const reducer = (state = [], action) => {
 				}
 				// remember to return an object with all its original properties and the modified property
 			});
-		case actions.BUG_REMOVED:
+		case actions.BUG_REMOVED.type:
 			return state.filter(bug => bug.id !== action.payload.id);
 		default:
 			return state;
