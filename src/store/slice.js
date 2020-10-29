@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { nanoid } from 'nanoid';
 
-export default createSlice({
+const slice = createSlice({
 	name: 'bugs',
 	initialState: [],
 	reducers: {
@@ -21,3 +21,6 @@ export default createSlice({
 		},
 	},
 });
+
+export const { BUG_ADDED, BUG_RESOLVED, BUG_REMOVED } = slice.actions;
+export default slice.reducer;
