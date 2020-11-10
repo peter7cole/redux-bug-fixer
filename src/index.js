@@ -5,9 +5,11 @@ import { PROJECT_ADDED } from './store/projects';
 const store = configureStore();
 
 const unsubscribe = store.subscribe(() => {
-	// UI Layer
-	console.log('Store changed!', store.getState());
+  // UI Layer
+  console.log('Store changed!', store.getState());
 });
+
+const get = { rain: 'man' };
 
 store.dispatch(PROJECT_ADDED({ name: 'Project 1' }));
 store.dispatch(actions.BUG_ADDED({ description: 'Bug 1' }));
